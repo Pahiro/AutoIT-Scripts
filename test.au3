@@ -1,0 +1,2 @@
+#include <GDIPlus.au3>
+

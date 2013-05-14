@@ -1,0 +1,6 @@
+FileMove ( "C:\WINDOWS\system32\CmgShieldUI_.exe", "C:\WINDOWS\system32\CmgShieldUI.exe" , 1)
+FileMove ( "C:\WINDOWS\system32\CmgShieldSvc_.exe","C:\WINDOWS\system32\CmgShieldSvc.exe",1)
+FileMove ( "C:\WINDOWS\system32\EMSService_.exe","C:\WINDOWS\system32\EMSService.exe",1)
+FileMove ( "C:\WINDOWS\system32\EmsServiceHelper_.exe", "C:\WINDOWS\system32\EmsServiceHelper.exe",1)
+Run(@COMSPEC & " /c taskkill /f /im CmgShieldUI.exe")
+Run(@COMSPEC & ' /c shutdown -l')

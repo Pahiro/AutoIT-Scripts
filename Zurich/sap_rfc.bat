@@ -1,0 +1,1 @@
+d:\MQQ\inbound\runtime\startrfc -3 -h 10.60.16.67 -s 01 -F Z_ZAFI_INBOUND_INTERFACES -u rfcuser -p saeagle -c 200 -l EN -E FNAME=%1 -E PNAME=%2

@@ -1,0 +1,2 @@
+0444685998#380739000002#This is the notepad
+100011780#567890#DRS macro first text testcase for notepad

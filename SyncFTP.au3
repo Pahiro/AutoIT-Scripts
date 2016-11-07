@@ -5,8 +5,8 @@ Dim $Feed
 While 1
 	If InetRead ( "http://bennet-pc:8085/subscriptions?id=pyrohiroshi&format=22&host=localhost&port=8083&size=25&orderby=published&removeDescription=true&removeTitle=false", 1) <> $Feed Then
 		$server = 'mysite.mweb.co.za'
-		$username = 'm0195130'
-		$pass = ''
+		$username = 'username'
+		$pass = 'password'
 
 		$Open = _FTP_Open('MyMweb')
 		$Conn = _FTP_Connect($Open, $server, $username, $pass)

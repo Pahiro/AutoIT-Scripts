@@ -27,7 +27,7 @@ Until $msg = $GUI_EVENT_CLOSE
 Func _Update($hWnd, $Msg, $iIDTimer, $dwTime)
 	$sType = "s"
 	$Now = _NowCalc()
-	$Then = "2013/06/25 11:00:00"
+	$Then = "2011/06/25 11:00:00"
 ;~ 	$MidNight = @Year & "/" & @MON & "/" & @MDAY + 1 & " 00:00:00"
 ;~ 	ConsoleWrite($Now & @CRLF)
 	$Secs = _DateDiff($sType, $Now, $Then)

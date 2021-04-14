@@ -7,10 +7,10 @@ Global $oErrorHandler = ObjEvent("AutoIt.Error", "_ErrFunc") ;Catch COM errors
 Global $IniFile = "qtof_I90_1.ini" ;Parameter for the INI file
 
 ;Accessing MQ
-EnvSet("MQSERVER", "BRAQSAPM1.SCC/TCP/10.60.8.97(11440)") ;MQ Server
+EnvSet("MQSERVER", "") ;MQ Server
 $MQSess  = ObjCreate("MQAX200.MQSession")
 $QMgr = ObjCreate("MQAX200.MQQueueManager")
-$QMgr = $MQSess.AccessQueueManager("ZAESAPQQM1") ;Queue Manager
+$QMgr = $MQSess.AccessQueueManager("") ;Queue Manager
 ConsoleWrite("Connected" & @CRLF)
 $Queue = $QMgr.AccessQueue("ZAE.SAP.AQ002", 16) ;Queue (2=MQOO_INPUT, 16=MQOO_OUTPUT)
 $QMgr.Commit

@@ -59,10 +59,10 @@ Func _ErrFunc($oError)
 EndFunc   ;==>_ErrFunc
 
 Func Connect()
-   $User = IniRead($IniFile,"SAPServer","Username","RFCUSER")
-   $Password = IniRead($IniFile,"SAPServer","Password","saeagle")
+   $User = IniRead($IniFile,"SAPServer","Username","")
+   $Password = IniRead($IniFile,"SAPServer","Password","")
    $System = IniRead($IniFile,"SAPServer","System","FID")
-   $AppServer = IniRead($IniFile,"SAPServer","AppServer","10.60.17.157")
+   $AppServer = IniRead($IniFile,"SAPServer","AppServer","")
    $SysNumber = IniRead($IniFile,"SAPServer","SysNumber","00")
    $Client = IniRead($IniFile,"SAPServer","Client","100")
    $Language = IniRead($IniFile,"SAPServer","Language","E")

@@ -24,10 +24,10 @@ EndIf;Parameter for the INI file
 ;Global $LogonControl = ObjCreate("SAP.LogonControl.1")
 ;Global $FunctionControl = ObjCreate("SAP.Functions")
 ;Global $oConnection
-Global $User = IniRead($IniFile,"SAPServer","Username","RFCUSER")
-Global $Password = IniRead($IniFile,"SAPServer","Password","saeagle")
+Global $User = IniRead($IniFile,"SAPServer","Username","")
+Global $Password = IniRead($IniFile,"SAPServer","Password","")
 Global $System = IniRead($IniFile,"SAPServer","System","FID")
-Global $AppServer = IniRead($IniFile,"SAPServer","AppServer","10.60.17.157")
+Global $AppServer = IniRead($IniFile,"SAPServer","AppServer","")
 Global $SysNumber = IniRead($IniFile,"SAPServer","SysNumber","00")
 Global $Client = IniRead($IniFile,"SAPServer","Client","100")
 Global $Language = IniRead($IniFile,"SAPServer","Language","E")
